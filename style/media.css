@@ -1,0 +1,113 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-background: #151437;
+        --primary-text-color: #FFFFFF;
+    }
+
+    body {
+        background: var(--primary-background);
+    }
+
+    .header__logo::before {
+        content: url('../images/logo_dark.png');
+    }
+
+    .carousel-indicators [data-bs-target] {
+        background: #EBEBEB;
+    }
+
+    .header__toggler {
+        color: var(--primary-text-color);
+    }
+
+    .main__about-text {
+        background: #7177F1;
+        color: var(--primary-text-color);
+    }
+
+    .main__about-content {
+        background: var(--primary-background);
+    }
+    .main__about-description {
+        color: var(--primary-text-color);
+    }
+
+    .accordion-button.collapsed {
+        background: var(--primary-background) !important;
+    }
+    
+    .main__works-link, .main__works-content {
+        background: var(--primary-background);
+    }
+    .main__works-link.active {
+        color: var(--primary-text-color);
+    }
+    .main__works-description {
+        color: var(--primary-text-color);
+    }
+    .footer__link, .footer__contact {
+        color: var(--primary-text-color);
+    }
+    .main__works-description {
+        color: var(--primary-text-color);
+
+    }
+}
+
+@media (max-width: 1024px) {
+    .main__works-content {
+        margin-top: 15PX;
+    }
+}
+
+@media (max-width: 992px) {
+    .header__content-items {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+
+    .header__link, .header__button {
+        margin-right: 0;
+    }
+
+    .main__about-content {
+        margin-top: 15px;
+    }
+
+    .main__about-text {
+        left: 190px;
+    }
+    .accordion {
+        margin-bottom: 20px;
+    }
+    .shape_2 {
+            top: 0;
+            width: 100px;
+    }
+}
+
+@media (max-width: 560px) {
+    .rectangle {
+        display: none;
+    }
+
+    .header__content-items {
+        margin-left: 0;
+    }
+
+    .main__about-text {
+        left: 70px;
+        top: -35px;
+    }
+}
+
+@media (max-width: 375px) {
+    .header__content-skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__about-btn {
+        margin: auto;
+    }
+}
